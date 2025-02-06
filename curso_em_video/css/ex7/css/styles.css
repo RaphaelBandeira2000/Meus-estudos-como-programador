@@ -1,0 +1,22 @@
+.imgbody {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.body_div {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+main {
+    /* Para achar fontes seguras ou padões, pesquisar: CSS web safe font combinations. Site da W3Schools */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto-h1 {
+    text-align: center;
+    font-size: 18px;
+}
+

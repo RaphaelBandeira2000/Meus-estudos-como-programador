@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon24.ico" type="image/x-icon">
+    <title>Ex12</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" target="_self" rel="prev">
+                <img src="../favicon2.ico" alt="imglogo">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Imagens Dinâmicas e Áudios</h1>
+        <h2>Imagens dinâmicas</h2>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        
+        <picture>
+            <source media="(max-width: 750px)" srcset="boreal300px.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="boreal700px.png" type="image/png">
+            <img src="boreal1000px.png" alt="borel1000px.png">
+        </picture>
+
+        <h2>Áudios</h2>
+        <p>Vamos aprender a reproduzir áudios em HTML5, tente reproduzir a música abaixo.</p>
+
+        <!--<audio src="Zoom.mp3" controls autoplay loop></audio>
+        MP3 WAV OGG-->
+        <audio preload="metadata" autoplay controls loop>
+            <source src="Zoom.mp3" type="audio/mpeg">
+            <source src="Zoom.ogg" type="audio/ogg">
+            <source src="Zoom.wav" type="audio/wav">
+            <p>Infelizmente seu navegador nãi consegue reproduzir áudio. <a href="Zoom.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+        </audio>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="shortcut icon" href="favicon24.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img src="../favicon2.ico" alt="imglogo">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tabelas</h1>
+        <hr>
+        <h2>Nessa aula vamos aprender os principais tópicos a seguir:</h2>
+        <p>
+            <ul>
+                <li>
+                    Cabeçalhos e corpo
+                </li>
+
+                <li>
+                    Linhas e colunas
+                </li>
+
+                <li>
+                    Mesclando células(linhas ou colunas)
+                </li>
+            </ul>
+        </p>
+
+        <section id="students">
+            <h2>Tabelas de alunos</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Carol Danvers</td>
+                        <td>carol.danvers@email.com</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>peter.peterparker@email.com</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tony Stark</td>
+                        <td>tonystarker@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="finance">
+            <h2>Tabela de controle financeiro</h2>
+
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">15/06/2022</td>
+                        <td>Despesa</td>
+                        <!-- <td colspan="2">Despesa</td> -->
+                        <td>Almoço</td>
+                        <td>35,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Receita</td>
+                        <td>Salário</td>
+                        <td>3.768,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
