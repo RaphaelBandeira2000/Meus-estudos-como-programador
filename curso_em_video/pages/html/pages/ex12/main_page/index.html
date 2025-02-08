@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../../assets/favicon24.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../../main_page_css/style.css">
+    <title>Ex 12</title>
+</head>
+<body>
+    <header>
+        <nav class="bar_navegation">
+            <a href="../../../../../main_page/index.html" target="_self" rel="prev">
+                <img src="../../../../../assets/favicon2.ico" alt="imglogo">
+            </a>
+
+            <a href="../../../main_page/index.html" target="_self" rel="prev">Voltar</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="title_1_1">
+            <h1>Imagens Dinâmicas e Áudios</h1>
+        </div>
+
+        <div class="title_2_1">
+            <h2>Imagens dinâmicas</h2>
+
+            <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>          
+            <picture>
+                <source media="(max-width: 750px)" srcset="../assets/boreal300px.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="../assets/boreal700px.png" type="image/png">
+                <img src="../assets/boreal1000px.png" alt="borel1000px.png">
+            </picture>
+        </div>
+
+        <div class="title_2_2">
+            <h2>Áudios</h2>
+
+            <p>Vamos aprender a reproduzir áudios em HTML5, tente reproduzir a música abaixo.</p>
+            <!--<audio src="Zoom.mp3" controls autoplay loop></audio>
+            MP3 WAV OGG-->
+            <audio preload="metadata" autoplay controls loop>
+                <source src="../assets/Zoom.mp3" type="audio/mpeg">
+                <source src="../assets/Zoom.ogg" type="audio/ogg">
+                <source src="../assets/Zoom.wav" type="audio/wav">
+                <p>Infelizmente seu navegador nãi consegue reproduzir áudio. <a href="Zoom.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+            </audio>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
