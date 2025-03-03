@@ -40,6 +40,10 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.274);
 }
 
+h2 {
+    text-align: center;
+}
+
 a {
     color: rebeccapurple;
     text-decoration: none;
@@ -58,10 +62,6 @@ a:active {
     color: black;
 }
 
-#title-1 {
-    display: 
-}
-
 .list {
     font-size: 1em;
 }
@@ -71,16 +71,10 @@ a:active {
 }
 
 .bloc {
-    width:25%;
-    display: inline-block;
+    height: 352px;
+    width:323px;
+    display: inline-table;
+    margin:10px 15px 30px 15px ;
     border: 1px solid black;
     padding: 10px;
-}
-
-.sub-bloc {
-    
-}
-
-developer_imgjoecool {
-    
 }
