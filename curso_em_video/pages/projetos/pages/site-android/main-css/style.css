@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'old london';
+    src: url(Olondona.otf) format(opentype), url(Olondon_.otf) format(opentype), url(OldLondonAlternate.ttf) format(truetype), url(OldLondon.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    user-select: none;
+    caret-color: transparent;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    margin: 0px 40px;
+    position: relative;
+}
+
+.content-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3vh;
+    left: 16vh;
+    width: 20vh;
+    background-color: #212121;
+    text-align: center;
+    padding: 10px 0;
+    list-style: none;
+    gap: 20px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.nav-list > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list > li > a:hover {
+    text-decoration: underline;
+}
+
+.logo-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo-name {
+    text-decoration: none;
+    color: black;
+    font-family: old london;
+    font-size: 26px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    transition: 0.6s;
+}
+
+.logo-name:hover {
+    opacity: 0.7;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    left: 24vh;
+    transform: translateX(50%);
+    white-space: nowrap;
+}
+
+.menu-icon > div {
+    width: 14px;
+    height: 2px;
+    background-color: black;
+    margin: 1px;
+    transition: 0.3s;
+}
+
+.shadow-header {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.226);
+}
+
+.nav-list.active {
+    display: flex;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 999px) {
+    header {
+    margin: 0px 10px;        
+    }
+
+    .menu-icon {
+        position: relative;
+        width: 5%;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: none;
+    }
+
+
+
+}
