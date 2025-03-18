@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    user-select: none;
+}
+
 body {
     font: normal 400 1em Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     background-color: #ffffff;
     margin: 20px;
 }
+
+
+/* header */
 
 header {
     background-color: #D2BBF5;
@@ -14,6 +23,80 @@ header {
     box-shadow: 1px 1px 2px #413a4da4;
     margin: 5px;
 }
+
+.bar-navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo-name {
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logo-name:hover {
+    opacity: 0.7;
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.menu-icon > div {
+    width: 14px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.nav-list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: #D2BBF5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.nav-list.active {
+    display: block;
+}
+
+.nav-list > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list > ul > li {
+    padding: 10px 0;
+}
+
+.nav-list > ul > li > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* main */
 
 main {
     font-size: 1em;
@@ -26,11 +109,21 @@ main {
     margin: 10px;
 }
 
-footer {
-    background-color: #D2BBF5; color: #000000;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 10px;
+.bloc {
+    height: 352px;
+    width:323px;
+    display: inline-table;
+    margin:10px 15px 30px 15px ;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.list {
+    font-size: 1em;
+}
+
+.sub-list {
+    font-size: 1em;
 }
 
 h1 {
@@ -44,37 +137,15 @@ h2 {
     text-align: center;
 }
 
-a {
-    color: rebeccapurple;
-    text-decoration: none;
+
+/* footer */
+
+footer {
+    background-color: #D2BBF5; color: #000000;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
 }
 
-a:visited {
-    color: rebeccapurple;
-}
 
-a:hover {
-    color: rebeccapurple;
-    text-decoration: underline;
-}
-
-a:active {
-    color: black;
-}
-
-.list {
-    font-size: 1em;
-}
-
-.sub-list {
-    font-size: 1em;
-}
-
-.bloc {
-    height: 352px;
-    width:323px;
-    display: inline-table;
-    margin:10px 15px 30px 15px ;
-    border: 1px solid black;
-    padding: 10px;
-}
+/* mobile */
