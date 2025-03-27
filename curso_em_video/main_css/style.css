@@ -118,12 +118,47 @@ main {
     padding: 10px;
 }
 
+.sub-bloc {
+    margin: 10px 10px 20px 10px;
+}
+
+.sub-bloc > h3 {
+    text-align: center;
+}
+
 .list {
     font-size: 1em;
+    padding: 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+.list > li {
+    list-style: none;
 }
 
 .sub-list {
     font-size: 1em;
+    margin: 0px 0px 5px 0px;
+}
+
+.sub-list > li {
+    text-align: none;
+}
+
+.sub-list > li > a {
+    text-decoration: none;
+}
+
+.sub-list > li > a:hover {
+    text-decoration: underline;
+}
+
+.sub-list > ul > li > a {
+    text-decoration: none;
+}
+
+.sub-list > ul > li > a:hover {
+    text-decoration: underline;
 }
 
 h1 {
@@ -135,6 +170,7 @@ h1 {
 
 h2 {
     text-align: center;
+    margin: 5px;
 }
 
 
