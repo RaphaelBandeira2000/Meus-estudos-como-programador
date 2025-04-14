@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+header {
+    background: linear-gradient(to right, rgb(7, 247, 135), #08542c);
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-name {
+    color: rgb(255, 255, 255);
+}
+
+.logo-name > p {
+    color: rgb(233, 233, 233);
+}
+
+.menu > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+main h1, main h2, main h3 {
+    color: #08542c;
+    margin-top: 20px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    background: linear-gradient(to right, #abd8c2,white);    
+}
+
+main h3 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+main p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+main ul {
+    list-style-type: "🤖";
+}
+
+.list-honeyed {
+    background-color: #e8f5e9;
+    padding: 10px 0px;
+    border-left: 5px solid #0f9d58;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.list-honeyed ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-honeyed li {
+    padding: 5px;
+    list-style-position: inside;
+}
+
+.img-dandroids {
+    display: block;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-irina {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 0 10px;
+}
+
+.img-bugdroid {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.video-android-evolution {
+    margin: 20px;
+    background-color: rgb(233, 231, 231);
+    border-radius: 10px;
+}
+
+.video-android-evolution iframe {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+}
+
+section {
+    background-color: #abd8c2;
+    padding: 5px 30px;
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding:10px 0;
+    height: 35px;
+    background-color: green;
+    box-sizing: border-box;
+}
