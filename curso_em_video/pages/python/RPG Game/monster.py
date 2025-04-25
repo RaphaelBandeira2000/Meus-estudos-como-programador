@@ -7,4 +7,3 @@ monsters = [
 ]
 for monster in monsters:
     monster_level = int(monster["level"])
-    print(monster_level)

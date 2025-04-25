@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'old london';
+    src: url(../assets/Olondona.otf) format(opentype), url(../assets/Olondon_.otf) format(opentype), url(../assets/OldLondonAlternate.ttf) format(truetype), url(../assets/OldLondon.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    user-select: none;
+    caret-color: transparent;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: relative;
+}
+
+.content-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: clamp(300px, 80%, 1200px);
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    width: 100%;
+    background-color: white;  /*#212121*/
+    text-align: center;
+    padding: 10px 0;
+    list-style: none;
+    gap: 20px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.nav-list > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list > li > a:hover {
+    text-decoration: underline;
+}
+
+.logo-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-name {
+    text-decoration: none;
+    color: black;
+    font-family: old london;
+    font-size: 26px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    transition: 0.6s;
+}
+
+.logo-name:hover {
+    opacity: 0.7;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.menu-icon > div {
+    width: 14px;
+    height: 2px;
+    background-color: black;
+    margin: 1px 0;
+    transition: 0.3s;
+}
+
+.shadow-header {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.226);
+}
+
+.nav-list.active {
+    display: flex;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 0px) {
+    header {
+    margin: 0px 10px;        
+    }
+
+    .menu-icon {
+        position: relative;
+        width: 5%;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: none;
+    }
+}
