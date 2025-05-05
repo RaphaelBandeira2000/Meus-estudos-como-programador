@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table001/title>
+    <style>
+        /* table 1 */
+
+        .table1 {
+            width: 400px;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .table1-tr {
+            background-color: lightgray;
+        }
+
+        .table1-td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        #given {
+            background-color: yellow;
+        }
+
+
+        /* table 2 */
+
+        .table2 {
+            border-collapse: collapse;
+            width: 400px;
+            height: 400px;
+        }
+
+        .table2-td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: top; /* Alinhamento vertical */
+        }
+
+        #numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    Tabela
+    <!--
+    Hierarquia de tabelas
+    table = tabela
+        table row = linha de tabela
+            table header = cabeçalho de tabela
+                table data = dado de tabela
+    -->
+    <table class="table1">
+        <tr class="table1-tr">
+            <td class="table1-td">A1</td>
+            <td class="table1-td">B1</td>
+            <td class="table1-td">C1</td>
+        </tr>
+        <tr class="table1-tr">
+            <td class="table1-td">A2</td>
+            <td class="table1-td">B2</td>
+            <td class="table1-td">C2</td>
+        </tr>
+        <tr class="table1-tr">
+            <td class="table1-td">A3</td>
+            <td class="table1-td">B3</td>
+            <td class="table1-td">C3</td>
+        </tr>
+        <tr class="table1-tr">
+            <td class="table1-td">A4</td>
+            <td class="table1-td" id="given">B4</td>
+            <td class="table1-td">C4</td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <tr class="table2-tr">
+            <td class="table2-td">A1</td>
+            <td class="table2-td">B1</td>
+            <td class="table2-td">C1</td>
+        </tr>
+        <tr class="table2-tr">
+            <td class="table2-td">A2</td>
+            <td class="table2-td">B2</td>
+            <td class="table2-td" id="numero">C2</td>
+        </tr>
+        <tr class="table2-tr">
+            <td class="table2-td">A3</td>
+            <td class="table2-td">B3</td>
+            <td class="table2-td">C3</td>
+        </tr>
+        <tr class="table2-tr">
+            <td class="table2-td">A4</td>
+            <td class="table2-td">B4</td>
+            <td class="table2-td">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
