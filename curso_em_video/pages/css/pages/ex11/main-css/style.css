@@ -1,0 +1,132 @@
+div.item {
+    background-color: lightblue;
+    border: 1px solid black;
+
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    margin-top: 20px;
+    width: 800px;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container-row {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+div.container-row-reverse {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+
+div.container-column {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+div.container-column-reverse {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* wrap */
+
+div.container-row-wrap {
+    display: flex;
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.container-row-reverse-wrap {
+    margin-bottom: 20px;
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+div.container-column-wrap {
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div.container-column-reverse-wrap {
+    height: 200px;
+    margin: 20px;
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+/* wrap-reverse */
+
+div.container-row-wrap-reverse {
+    margin-bottom: 20px;
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+div.container-row-reverse-wrap-reverse {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+/* flex-flow */
+
+div.container-flex-flow {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+}
+
+div.itens {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 10px;
+    flex: auto;
+}
+
+/* justify-content*/
+
+div.container-justify-content {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
