@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Typical Devices Breackpoints
+Celular: 0-480
+Tablet: 481-768
+Notebook: 769-1279
+Desktop:1280+
+*/
+
+@media print {
+    body {
+        border: 2px solid black;
+    }
+
+    main {
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita por https://github.com/RaphaelBandeira2000';
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+    img#print {display: block;}
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        background-image: url(../../assets/back-phone.jpg);
+    }
+
+    img#phone {display: block;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        background-image: url(../../assets/back-tablet.jpg);
+    }
+
+    img#tablet {display: block;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    body {
+        background-image: url(../../assets/back-pc.jpg);
+    }
+
+    img#pc {display: block;}
+}
+
+@media screen and (min-width: 1280px) {
+    body{
+        background-image: url(../../assets/back-tv.jpg);
+    }
+
+    img#tv {display: block;}
+}

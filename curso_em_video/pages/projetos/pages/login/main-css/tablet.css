@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top, #3E5400, #627D15 30%, #DDF29F);
+}
+
+section#login {
+    width: 90vw;
+    height: 530px;
+}

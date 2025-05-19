@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+header {
+    width: 1000px;
+    border-radius: 10px;
+}
+
+main {
+    width: 500px;
+}

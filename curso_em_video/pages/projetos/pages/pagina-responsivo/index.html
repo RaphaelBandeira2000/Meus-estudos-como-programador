@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-css/style.css" media="all">
+    <link rel="stylesheet" href="main-css/smartphone.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="main-css/tablet.css" media="screen and (min-width: 481px) and (max-width: 768px)">
+    <link rel="stylesheet" href="main-css/laptop.css" media="screen and (min-width: 769px) and (max-width: 1279px)">
+    <link rel="stylesheet" href="main-css/desktop.css" media="screen and (min-width: 1280px)">
+    <title>Página Responsiva</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Nome do Site</h1>
+        <div id="burguer" onclick="clickMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>teste</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eum at nobis sunt illo, magnam voluptatibus dolores rem optio quae et odit necessitatibus est sapiente dignissimos excepturi fugiat quis commodi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro similique est excepturi. Saepe blanditiis, nobis recusandae sed nostrum consectetur ea ad vero, ullam dicta praesentium maxime repudiandae officiis molestiae dolore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, deserunt. Repellendus, soluta laborum voluptatem, vitae dolore expedita obcaecati omnis laudantium impedit voluptas quaerat? Laudantium, commodi amet pariatur debitis laborum mollitia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate optio sequi iste? Et consectetur dolorem optio nobis vel explicabo, vitae incidunt, aut, quo eos ad asperiores non tempora quam quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minus vitae inventore, sit explicabo libero dolorem, illo quod qui odit sunt, est asperiores? Accusamus expedita earum facilis quasi reiciendis consectetur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nobis autem, enim dignissimos ipsam cumque unde explicabo maiores, minus tempora tenetur corrupti quaerat magnam odit laborum veritatis! Maiores, saepe quod.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad id cupiditate impedit, sunt magnam eos inventore non vel eaque doloribus rerum voluptas delectus fugit quo distinctio, mollitia deleniti et! Lorem ipsum dolor sit amet consectetur adipisicing elit. In maxime corrupti, vel possimus excepturi necessitatibus quas dolores iusto, modi dolor, impedit porro! Maiores magni quidem modi quisquam, fuga voluptatem molestiae.</p>
+    </main>
+    <script>
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 481) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

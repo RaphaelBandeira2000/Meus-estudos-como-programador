@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-css/smartphone.css" media="all">
+    <link rel="stylesheet" href="main-css/tablet.css" media="screen and (min-width: 481px) and (max-width: 768px)">
+    <link rel="stylesheet" href="main-css/laptop.css" media="screen and (min-width: 769px) and (max-width: 1279px)">
+    <link rel="stylesheet" href="main-css/desktop.css" media="screen and (min-width: 1280px)">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="image"></div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) <br>Acesse sua conta</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" required minlength="8" maxlength="32">
+                        <label for="ilogin"></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="20">
+                        <label for="isenha"></label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
