@@ -1,0 +1,81 @@
+div.container-stretch {
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+}
+
+div.container-flexstart {
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+div.container-flexend {
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+}
+
+div.container-center {
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+div.container-spacebetween {
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+
+div.container-spaceevenly {
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+}
+
+div.container-spacearound {
+    background-color: lightsalmon;
+    margin-bottom: 20px;
+
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+
+div.container-stretch > div.item {
+    border: 1px solid black;
+    padding: 40px;
+    background-color: lightblue;
+}
+
+div.itens {
+    border: 1px solid black;
+    padding: 40px;
+    background-color: lightblue;
+}
